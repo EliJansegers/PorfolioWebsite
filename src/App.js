@@ -1,5 +1,5 @@
 import styles from "./style";
-import pf from './pictures/Bw.jpg'
+import pf from './pictures/BwResized.jpg'
 
 const App = () => (
   <div className="bg-black w-full overflow-hidden">
@@ -18,7 +18,12 @@ const App = () => (
         Qualities
       </div>
     </div>
-    <img src={pf} alt='pf' width='400px' height='300px'></img>
+    <div className={`bg-oxford-blue ${styles.paddingX} ${styles.flexStart}`} >
+      <div className={`${styles.boxWidth}`}>
+        <h1 className="text-6xl text-platinum pt-3 pb-3">About me</h1>
+        <img src={pf} alt='pf' className="rounded-full w-80 h-80"></img>
+      </div> 
+    </div>
   </div>
 );
 export default App;
