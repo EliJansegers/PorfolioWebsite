@@ -1,4 +1,5 @@
 import styles from "./style";
+import pf from './pictures/Bw.jpg'
 
 const App = () => (
   <div className="bg-black w-full overflow-hidden">
@@ -17,7 +18,7 @@ const App = () => (
         Qualities
       </div>
     </div>
-    <img src='Bw.jpg' alt='pf'></img>
+    <img src={pf} alt='pf' width='400px' height='300px'></img>
   </div>
 );
 export default App;
