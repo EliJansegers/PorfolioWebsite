@@ -4,9 +4,20 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='w-full flex py-6
-    justify-between items-center navbar'> 
-    </nav>
+  <ul className='flex bg-oxford-blue'>
+    <li className='mr-6 text-5xl' >
+      <a className='text-white' href='# '>Test1</a>
+    </li>
+    <li className='mr-6'>
+      <a className='text-white text-3xl' href='# '>Test2</a>
+    </li>
+    <li className='mr-6'>
+      <a className='text-white text-3xl' href='# '>Test3</a>
+    </li>
+    <li className='mr-6'>
+      <a className='text-white text-3xl' href='# '>Test4</a>
+    </li>
+  </ul>
   )
 }
 
