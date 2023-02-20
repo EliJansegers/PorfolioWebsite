@@ -1,11 +1,25 @@
-import pf from './pictures/BwResized.jpg'
-import Navbar from "./components/Navbar";
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => (
-  <div>
-    <Navbar/>
-    <h1 className="text-6xl text-platinum pt-3 pb-3">About me</h1>
-    <img src={pf} alt='pf' className="rounded-full w-80 h-80"></img>
-  </div>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
 export default App;
