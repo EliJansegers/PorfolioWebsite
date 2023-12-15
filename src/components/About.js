@@ -8,16 +8,18 @@ const About = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
+  const variants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  };
+
   React.useEffect(() => {
     if (inView) {
       controls.start('visible');
+    } else {
+      controls.start('hidden');
     }
   }, [controls, inView]);
-
-  const variants = {
-    visible: { opacity: 1, translateX: 0 },
-    hidden: { opacity: 0, translateX: -100 },
-  };
 
   return (
     <motion.div

@@ -1,9 +1,13 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import toast from 'react-hot-toast';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const ContactForm = () => {
   const form = useRef();
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -23,10 +27,29 @@ const ContactForm = () => {
         console.log(error.text);
         toast.error('Unable to send mail')
         // Handle errors (e.g., show an error message)
-    });
+    }); 
+  };
+  const variants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
   };
 
+  React.useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    } else {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
+
   return (
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={variants}
+      transition={{ duration: 0.5 }}
+    >
     <div className="flex justify-center">
       <form ref={form} onSubmit={sendEmail} className="w-full max-w-lg bg-white rounded-lg shadow-md p-8 mt-6 mb-6">
         {/* Input fields with improved styling */}
@@ -57,6 +80,7 @@ const ContactForm = () => {
         </div>
       </form>
     </div>
+    </motion.div>
   );
 };
 

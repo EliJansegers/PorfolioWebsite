@@ -12,7 +12,9 @@ const projects = [
     title: "DoCom",
     description: "DoCom was my first completed react website.",
     imageUrl: docomImg,
-    category: "Web Design"
+    category: "Web Design",
+    link : "https://docom-ej.netlify.app" // Your project link
+
   },
 ];
 
@@ -20,16 +22,18 @@ const Portfolio = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
+  const variants = {
+    visible: { opacity: 1, x: 0 },
+    hidden: { opacity: 0, x: -100 },
+  };
+
   React.useEffect(() => {
     if (inView) {
       controls.start('visible');
+    } else {
+      controls.start('hidden');
     }
   }, [controls, inView]);
-
-  const variants = {
-    visible: { opacity: 1, translateX: 0 },
-    hidden: { opacity: 0, translateX: -100 },
-  };
 
   return (
     <motion.div
@@ -49,6 +53,7 @@ const Portfolio = () => {
               description={project.description}
               imageUrl={project.imageUrl}
               category={project.category}
+              link={project.link}
             />
           ))}
         </div>
