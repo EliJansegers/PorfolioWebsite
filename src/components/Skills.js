@@ -6,18 +6,14 @@ const SkillBar = ({ level }) => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
-  const variants = {
-    visible: { opacity: 1, x: 0 },
-    hidden: { opacity: 0, x: -100 },
-  };
-
   React.useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start({ width: `${level}%` });
     } else {
-      controls.start('hidden');
+      controls.start({width: 0});
     }
-  }, [controls, inView]);
+  }, [controls, inView, level]);
+
   return (
     <motion.div
       ref={ref}
