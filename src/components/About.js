@@ -61,6 +61,10 @@ const About = () => {
             <p>Production Worker at Lonza Bornem (2019 - Present)</p>
             <p>Café Worker at t'Zandhof Bornem (2018 - 2019)</p>
           </div>
+          <div className="mb-4">
+            <h2 className="text-lg font-semibold">Hobbies</h2>
+            <p>Coding, Muay Thai, Fitness</p>
+          </div>
           <div>
             <h2 className="text-lg font-semibold">Personal Qualities</h2>
             <p>Quick Learner, Flexible, Spontaneous</p>
