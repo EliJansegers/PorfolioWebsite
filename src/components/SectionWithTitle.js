@@ -4,6 +4,8 @@ import { useInView } from 'react-intersection-observer';
 
 
 const SectionWithTitle = ({title,children}) => {
+    const titleId = title
+
     const controls = useAnimation();
     const [ref, inView] = useInView();
   
@@ -28,7 +30,7 @@ const SectionWithTitle = ({title,children}) => {
         variants={variants}
         transition={{ duration: 0.5 }}
       >
-      <section className="text-offWhite body-font">
+      <section  id={titleId} className="text-offWhite body-font section-offset">
         <div className="container px-5 py-12 mx-auto">
           <h1 className="text-4xl lg:text-5xl font-bold title-font text-center mb-12 text-gray-900 relative">
               {title}

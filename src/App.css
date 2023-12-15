@@ -17,5 +17,11 @@ body {
   padding: 0;
 }
 .container {
-  padding: 4rem 1rem; /* Adjust as needed */
+  padding: 2rem 1rem; /* Adjust as needed */
+}
+
+/* In your CSS file */
+.section-offset {
+  margin-top: -4rem; /* Negative margin equal to header height */
+  padding-top: 4rem; /* Padding to push down the content */
 }

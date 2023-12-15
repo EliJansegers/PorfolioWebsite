@@ -8,10 +8,10 @@ const Header = () => {
           <span className="ml-3 text-xl text-offWhite">Eli Jansegers</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base  justify-center">
-          <a href="#about" className="mr-5 hover:text-lightBlue">About</a>
-          <a href="#skills" className="mr-5 hover:text-lightBlue">Skills</a>
-          <a href="#portfolio" className="mr-5 hover:text-lightBlue">Portfolio</a>
-          <a href="#contact" className="mr-5 hover:text-lightBlue">Contact</a>
+          <a href="#About Me" className="mr-5 hover:text-lightBlue">About</a>
+          <a href="#Skills" className="mr-5 hover:text-lightBlue">Skills</a>
+          <a href="#Projects" className="mr-5 hover:text-lightBlue">Portfolio</a>
+          <a href="#Contact Me" className="mr-5 hover:text-lightBlue">Contact</a>
         </nav>
       </div>
     </header>

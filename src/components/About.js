@@ -48,9 +48,6 @@ const About = () => {
           <p className="mb-4">
             I'm a passionate student in Informatics, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT Gent.
           </p>
-          <p className="mb-4">
-            Contact me at <a href="mailto:eli.jansegers27@gmail.com" className="text-blue-500">eli.jansegers27@gmail.com</a> or call me at 0484170254.
-          </p>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Education</h2>
             <p>Bachelor in Applied Informatics (Data Science & AI) - HOGENT Gent (2021 - Present)</p>
@@ -59,7 +56,7 @@ const About = () => {
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Work Experience</h2>
             <p>Production Worker at Lonza Bornem (2019 - Present)</p>
-            <p>Café Worker at t'Zandhof Bornem (2018 - 2019)</p>
+            <p>Waiter at t'Zandhof Bornem (2018 - 2019)</p>
           </div>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Hobbies</h2>
