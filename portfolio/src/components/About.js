@@ -44,7 +44,7 @@ const About = () => {
             About Eli Jansegers
           </h1>
           <p className="mb-4">
-            I'm a passionate student in Informatica, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT Gent.
+            I'm a passionate student in Informatics, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT Gent.
           </p>
           <p className="mb-4">
             Contact me at <a href="mailto:eli.jansegers27@gmail.com" className="text-blue-500">eli.jansegers27@gmail.com</a> or call me at 0484170254.
@@ -58,11 +58,6 @@ const About = () => {
             <h2 className="text-lg font-semibold">Work Experience</h2>
             <p>Production Worker at Lonza Bornem (2019 - Present)</p>
             <p>Café Worker at t'Zandhof Bornem (2018 - 2019)</p>
-          </div>
-          <div className="mb-4">
-            <h2 className="text-lg font-semibold">Skills</h2>
-            <p>Programming: Python, Java, JavaScript, Bash, .NET</p>
-            <p>Languages: Dutch, English, French</p>
           </div>
           <div>
             <h2 className="text-lg font-semibold">Personal Qualities</h2>
