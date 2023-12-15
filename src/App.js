@@ -6,11 +6,13 @@ import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import SectionWithTitle from './components/SectionWithTitle.js';
+import { Toaster } from 'react-hot-toast';
 import './App.js'; // Make sure to import TailwindCSS here
 
 function App() {
   return (
     <div className="App">
+      <Toaster/>
       <Header />
       <SectionWithTitle title="About Me">
       <About />
