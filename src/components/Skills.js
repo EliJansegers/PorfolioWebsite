@@ -26,15 +26,18 @@ const SkillBar = ({ level }) => {
 };
 // Example skills data structure
 const skills = [
-  { name: 'Python', level: 80 }, // Level is a percentage
-  { name: 'Java', level: 70 },
-  { name: 'JavaScript', level: 70 },
-  { name: 'Bash', level: 60 },
-  { name: '.NET', level: 40 },
-  { name: 'SQL', level: 60 },
-  { name: 'Linux', level: 60 },
-  { name: 'Machine learning', level: 70 },
-  { name: 'Deep Learning', level: 20 },
+  { name: 'Python', level: 90 },
+  { name: 'Machine learning', level: 80 },
+  { name: 'Deep Learning', level: 80}, 
+  { name: 'SQL', level: 75 },
+  { name: 'Java', level: 65 },
+  { name: 'APIs', level: 65 },
+  { name: 'AWS', level: 65 },
+  { name: 'React Framework', level: 60 },
+  { name: 'PowerBI', level: 50 },
+  { name: 'Linux', level: 50 },
+  { name: '.NET', level: 50 },
+  { name: 'Bash', level: 40 },
   // Add more skills as needed
 ];
 

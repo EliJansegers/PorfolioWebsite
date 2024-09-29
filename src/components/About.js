@@ -46,7 +46,8 @@ const About = () => {
             About Eli Jansegers
           </h1>
           <p className="mb-4">
-            I'm a passionate student in Informatics, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT Gent.
+            I'm a passionate student in Informatics, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT. 
+            I am driven to deliver well written code solutions for managing data and transforming data into clear visuals.
           </p>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Education</h2>
@@ -55,16 +56,23 @@ const About = () => {
           </div>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Work Experience</h2>
-            <p>Production Worker at Lonza Bornem (2019 - Present)</p>
+            <p>Application Development at Conway Temse (July 2024)</p>
+            <p>Intership at Infofarm (Feb 2024 - May 2024)</p>
+            <p>Production Worker at Lonza Bornem (2019 - 2023)</p>
             <p>Waiter at t'Zandhof Bornem (2018 - 2019)</p>
+            
           </div>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Hobbies</h2>
-            <p>Coding, Muay Thai, Fitness</p>
+            <p>Coding, Muay Thai, Fitness, Snowboarding</p>
           </div>
           <div>
             <h2 className="text-lg font-semibold">Personal Qualities</h2>
-            <p>Quick Learner, Flexible, Spontaneous</p>
+            <p>Eager to learn, Flexible, Spontaneous, Conversationally skilled and Independent </p>
+          </div>
+          <div>
+            <h2 className="text-lg font-semibold">Professional Qualities</h2>
+            <p>Working Agile, Applying Scrum and Presenting </p>
           </div>
         </div>
       </div>
