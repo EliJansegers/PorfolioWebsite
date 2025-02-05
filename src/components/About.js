@@ -46,7 +46,7 @@ const About = () => {
             About Eli Jansegers
           </h1>
           <p className="mb-4">
-            I'm a passionate student in Informatics, currently pursuing a Bachelor's in Applied Informatics with a specialization in Data Science & AI at HOGENT. 
+            I'm a passionate Data Engineer, currently working as a junior Data Engineer with a Bachelor's in Applied Informatics (Specialized in Data Science & AI). 
             I am driven to deliver well written code solutions for managing data and transforming data into clear visuals.
           </p>
           <div className="mb-4">
@@ -56,6 +56,7 @@ const About = () => {
           </div>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Work Experience</h2>
+            <p>Currently Working at Xylos as a Junior Data Engineer (Oct 2024 - Present)</p>
             <p>Application Development at Conway Temse (July 2024)</p>
             <p>Intership at Infofarm (Feb 2024 - May 2024)</p>
             <p>Production Worker at Lonza Bornem (2019 - 2023)</p>
