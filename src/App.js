@@ -1,8 +1,8 @@
+// eslint-disable-next-line
 import React from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import SectionWithTitle from './components/SectionWithTitle.js';
@@ -22,9 +22,6 @@ function App() {
       </SectionWithTitle>
       <SectionWithTitle title="Projects">
       <Portfolio />
-      </SectionWithTitle>
-      <SectionWithTitle title="Contact Me">
-      <Contact />
       </SectionWithTitle>
       <Footer />
     </div>

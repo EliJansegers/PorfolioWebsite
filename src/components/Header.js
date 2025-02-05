@@ -11,7 +11,6 @@ const Header = () => {
           <a href="#About Me" className="mr-5 hover:text-lightBlue">About</a>
           <a href="#Skills" className="mr-5 hover:text-lightBlue">Skills</a>
           <a href="#Projects" className="mr-5 hover:text-lightBlue">Portfolio</a>
-          <a href="#Contact Me" className="mr-5 hover:text-lightBlue">Contact</a>
         </nav>
       </div>
     </header>

@@ -20,7 +20,7 @@ const SkillBar = ({ level }) => {
       animate={controls}
       initial={{ width: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="h-2 rounded-full bg-blue-500"
+      className="h-2 rounded-full bg-blue-800"
     />
   );
 };
