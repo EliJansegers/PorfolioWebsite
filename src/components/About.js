@@ -1,6 +1,6 @@
 import React from 'react';
 // Assuming you have an image named 'profile.jpg' in your public folder or an external URL
-import profilePic from '../images/profilepicture.jpg'; // Update with the correct path
+import profilePic from '../images/PF-Xylos.png'; // Update with the correct path
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -37,7 +37,7 @@ const About = () => {
             className="object-cover object-center rounded-full shadow-lg" 
             alt="Eli Jansegers" 
             src={profilePic}
-            style={{ filter: 'brightness(80%)' }} // Adjust the percentage to make it darker as needed
+            style={{ filter: 'brightness(90%)' }} // Adjust the percentage to make it darker as needed
           />
         </div>
         {/* Information Section */}
