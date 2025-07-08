@@ -51,7 +51,7 @@ const About = () => {
           </p>
           <div className="mb-4">
             <h2 className="text-lg font-semibold">Education</h2>
-            <p>Bachelor in Applied Informatics (Data Science & AI) - HOGENT Gent (2021 - Present)</p>
+            <p>Bachelor in Applied Informatics (Data Science & AI) - HOGENT Gent (2021 - 2025)</p>
             <p>Secondary in Computer Management - Broederschool Sint-Niklaas (2019 - 2021)</p>
           </div>
           <div className="mb-4">
