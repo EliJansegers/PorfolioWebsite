@@ -1,20 +1,24 @@
-// Portfolio.js
 import React from 'react';
 import PortfolioCard from './PortfolioCard';
-import docomImg from '../images/docom.png'
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';  // Import Link
 
-// Example projects data
 const projects = [
   {
     id: 1,
-    title: "DoCom",
-    description: "DoCom was my first completed react website.",
-    imageUrl: docomImg,
-    category: "Web Design",
-    link : "https://docom-ej.netlify.app" // Your project link
-
+    title: "Infofarm : Computer Vision Model in the Cloud",
+    description: "For my internship I chose to work at infofarm where I developed a Proof of concept Computer Vision model to detect defects on tomatoes for Belorta.",
+    imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/9842a918416769.562f32cc26026.png",
+    category: "Data Engineering, Data Science",
+  },
+  {
+    id: 2,
+    title: "Fedrus : CSRD Reporting",
+    description: "The first project I did when working as a junior data engineer for Xylos was about CSRD reporting.",
+    imageUrl: "https://fedrusinternational.com/wp-content/uploads/2023/10/Fedrus-International_logo.png",
+    category: "Data Engineering",
+    // Remove external link, we'll use internal routing
   },
 ];
 
@@ -43,22 +47,22 @@ const Portfolio = () => {
       variants={variants}
       transition={{ duration: 0.5 }}
     >
-    <section id="portfolio" className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          {projects.map(project => (
-            <PortfolioCard 
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              category={project.category}
-              link={project.link}
-            />
-          ))}
+      <section id="portfolio" className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            {projects.map(project => (
+              <Link key={project.id} to={`/project/${project.id}`} className="w-full sm:w-1/2 lg:w-1/3 p-4">
+                <PortfolioCard 
+                  title={project.title}
+                  description={project.description}
+                  imageUrl={project.imageUrl}
+                  category={project.category}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </motion.div>
   );
 };
