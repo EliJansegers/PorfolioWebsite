@@ -5,6 +5,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Footer from './components/Footer';
 import SectionWithTitle from './components/SectionWithTitle.js';
+import CertificationsSection from './components/Certification.js';
 import { Toaster } from 'react-hot-toast';
 import './App.css'; // Import Tailwind CSS here
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -20,6 +21,9 @@ function Home() {
       </SectionWithTitle>
       <SectionWithTitle title="Skills">
         <Skills />
+      </SectionWithTitle>
+      <SectionWithTitle title="Certifications">
+        <CertificationsSection />
       </SectionWithTitle>
       <SectionWithTitle title="Projects">
         <Portfolio />

@@ -3,20 +3,32 @@ import { useParams, useNavigate } from 'react-router-dom'; // import useNavigate
 import Header from './Header';
 import Footer from './Footer';
 import SectionWithTitle from './SectionWithTitle';
+import BPpic from '../images/BP-Kick.png'; // Update with the correct path
+
 
 // Example projects data (ideally move this to a shared file or fetch from a service)
 const projects = [
-{
+  {
     id: 1,
+    title: "Bachelor Paper : Detection of Muay Thai movements with recurrent Neural Networks",
+    description: "For My bachelor paper I developed a model to detect Muay Thai movements with recurrent Neural Networks.",
+    imageUrl: BPpic,
+    category: "Data Engineering, Deep learning, Data Science",
+    skillsUsed: ["Data engineering", "ETL", 'Python', 'Deep Learning', 'RNN', 'LSTM'],
+    detailedDescription:
+    'In my bachelor paper, I developed a recurrent neural network model using LSTM architecture to accurately detect Muay Thai movements based on coordinates predicted via pose estimation with the YOLOv8 model. I made the LSTM learn the difference in pose estimation coordinates over 20 evenly spread frames from every video. This approach allowed the model to effectively capture temporal patterns in the movement data, leading to improved recognition accuracy. The project provided valuable insights into the application of deep learning techniques for human activity recognition and demonstrated the potential of combining pose estimation with sequence modeling for sports analytics.',
+  },
+ {
+    id: 2,
     title: "Infofarm : Computer Vision Model in the Cloud",
     description: "For my internship I chose to work at infofarm where I developed a Proof of concept Computer Vision model to detect defects on tomatoes for Belorta.",
     imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/9842a918416769.562f32cc26026.png",
-    category: "Data Engineering, Data Science",
+    category: "Data Engineering, Deep learning, Data Science",
     skillsUsed: ["Data engineering", "Computer Vision", "SageMaker", "ETL", 'AWS', 'Streamlit', 'Python'],
     detailedDescription: 'In this project I developed a computer vision model to identify defects on tomatoes using AWS SageMaker. I handled data collection, preprocessing, model training, deployement and a small frot end with authentication from AWS inside a Streamlit app. This proof of concept was recieved really well and was one of the first steps for me to become familiar with a cloud environment and MLOps practices.',
   },
   {
-    id: 2,
+    id: 3,
     title: "Fedrus : CSRD Reporting",
     description: "The first project I did when working as a junior data engineer for Xylos was about CSRD reporting.",
     imageUrl: "https://fedrusinternational.com/wp-content/uploads/2023/10/Fedrus-International_logo.png",

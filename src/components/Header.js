@@ -10,6 +10,7 @@ const Header = () => {
         <nav className="md:ml-auto flex flex-wrap items-center text-base  justify-center">
           <a href="#About Me" className="mr-5 hover:text-lightBlue">About</a>
           <a href="#Skills" className="mr-5 hover:text-lightBlue">Skills</a>
+          <a href="#Certifications" className="mr-5 hover:text-lightBlue">Certifications</a>
           <a href="#Projects" className="mr-5 hover:text-lightBlue">Portfolio</a>
         </nav>
       </div>

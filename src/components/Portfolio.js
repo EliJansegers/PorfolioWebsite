@@ -3,17 +3,26 @@ import PortfolioCard from './PortfolioCard';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';  // Import Link
+import BPpic from '../images/BP-Kick.png'; // Update with the correct path
+
 
 const projects = [
   {
     id: 1,
-    title: "Infofarm : Computer Vision Model in the Cloud",
-    description: "For my internship I chose to work at infofarm where I developed a Proof of concept Computer Vision model to detect defects on tomatoes for Belorta.",
-    imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/9842a918416769.562f32cc26026.png",
-    category: "Data Engineering, Data Science",
+    title: "Bachelor Paper : Detection of Muay Thai movements with recurrent Neural Networks",
+    description: "For My bachelor paper I developed a model to detect Muay Thai movements with recurrent Neural Networks.",
+    imageUrl: BPpic,
+    category: "Data Engineering, Deep learning, Data Science",
   },
   {
     id: 2,
+    title: "Infofarm : Computer Vision Model in the Cloud",
+    description: "For my internship I chose to work at infofarm where I developed a Proof of concept Computer Vision model to detect defects on tomatoes for Belorta.",
+    imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/hd/9842a918416769.562f32cc26026.png",
+    category: "Data Engineering, Deep learning, Data Science",
+  },
+  {
+    id: 3,
     title: "Fedrus : CSRD Reporting",
     description: "The first project I did when working as a junior data engineer for Xylos was about CSRD reporting.",
     imageUrl: "https://fedrusinternational.com/wp-content/uploads/2023/10/Fedrus-International_logo.png",
