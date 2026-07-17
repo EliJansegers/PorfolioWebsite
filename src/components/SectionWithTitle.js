@@ -32,10 +32,10 @@ const SectionWithTitle = ({title,children}) => {
       >
       <section  id={titleId} className="text-offWhite body-font section-offset">
         <div className="container px-5 py-12 mx-auto">
-          <h1 className="text-4xl lg:text-5xl font-bold title-font text-center mb-12 text-gray-900 relative">
+          <h1 className="text-4xl lg:text-5xl font-bold title-font text-center mb-4 text-offWhite relative">
               {title}
           </h1>
-          <div className=" inset-x-0 bottom-0 h-0.5 mx-auto bg-gradient-to-r from-darkBlue to-steelBlue rounded-full"></div>
+          <div className="w-24 h-0.5 mx-auto mb-12 bg-gradient-to-r from-steelBlue to-lightBlue rounded-full"></div>
           {children}
         </div>
       </section>

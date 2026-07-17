@@ -50,7 +50,7 @@ function ProjectDetails() {
       <>
         <Header />
         <SectionWithTitle title="Project Not Found">
-          <p className="text-center text-red-600">Sorry, the project you are looking for does not exist.</p>
+          <p className="text-center text-red-400">Sorry, the project you are looking for does not exist.</p>
         </SectionWithTitle>
         <Footer />
       </>
@@ -65,22 +65,22 @@ function ProjectDetails() {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full h-full object-contain"
+            className="w-full h-full object-contain bg-blueGray rounded-lg"
           />
-          <p className="mb-6 text-gray-700">{project.detailedDescription}</p>
-          <h3 className="text-xl text-gray-700 font-semibold mb-2">Skills Used</h3>
+          <p className="mb-6 text-lightBlue">{project.detailedDescription}</p>
+          <h3 className="text-xl text-offWhite font-semibold mb-2">Skills Used</h3>
           <ul className="list-disc list-inside mb-6">
             {project.skillsUsed.map((skill) => (
-              <li key={skill} className="text-gray-600">
+              <li key={skill} className="text-lightBlue">
                 {skill}
               </li>
             ))}
           </ul>
-          <p className="italic text-gray-500">Category: {project.category}</p>
+          <p className="italic text-lightBlue">Category: {project.category}</p>
         </SectionWithTitle>
-        <button 
-          onClick={() => navigate('/')} 
-          className="mb-4 py-2 px-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+        <button
+          onClick={() => navigate('/')}
+          className="mb-4 py-2 px-4 bg-steelBlue text-offWhite rounded hover:bg-lightBlue hover:text-darkBlue transition"
         >
           &larr; Go Back
         </button>

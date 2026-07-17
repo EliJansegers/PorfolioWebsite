@@ -11,6 +11,7 @@ import './App.css'; // Import Tailwind CSS here
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portfolio from './components/Portfolio';
 import ProjectDetails from './components/ProjectDetails';
+import ParticlesBackground from './components/ParticlesBackground';
 
 function Home() {
   return (
@@ -37,6 +38,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <ParticlesBackground />
         <Toaster />
         <Routes>
           <Route path="/" element={<Home />} />

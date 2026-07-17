@@ -56,7 +56,7 @@ const Portfolio = () => {
       variants={variants}
       transition={{ duration: 0.5 }}
     >
-      <section id="portfolio" className="text-gray-600 body-font">
+      <section id="portfolio" className="text-offWhite body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             {projects.map(project => (

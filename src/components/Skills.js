@@ -20,7 +20,7 @@ const SkillBar = ({ level }) => {
       animate={controls}
       initial={{ width: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="h-2 rounded-full bg-blue-800"
+      className="h-2 rounded-full bg-gradient-to-r from-steelBlue to-lightBlue"
     />
   );
 };
@@ -45,14 +45,14 @@ const skills = [
 
 function Skills() {
     return (
-      <section id="skills" className="text-gray-600 body-font">
+      <section id="skills" className="text-offWhite body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap -m-4">
             {skills.map(skill => (
               <div key={skill.name} className="p-4 md:w-1/2 w-full">
-                <div className="h-full bg-gray-200 rounded overflow-hidden">
+                <div className="h-full bg-blueGray border border-steelBlue/40 rounded overflow-hidden">
                   <div className="w-full p-4">
-                    <h2 className="title-font font-medium text-3xl text-gray-900">{skill.name}</h2>
+                    <h2 className="title-font font-medium text-3xl text-offWhite">{skill.name}</h2>
                     <SkillBar level={skill.level} />
                   </div>
                 </div>

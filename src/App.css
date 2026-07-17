@@ -12,9 +12,26 @@
   }
 
 /* in your main CSS file */
+@keyframes auroraDrift {
+  0%   { background-position: 10% 15%, 90% 75%, 50% 100%, 0% 0%; }
+  50%  { background-position: 20% 10%, 80% 85%, 55% 90%, 0% 0%; }
+  100% { background-position: 10% 15%, 90% 75%, 50% 100%, 0% 0%; }
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #000000;
+  background-image:
+    radial-gradient(circle, rgba(65, 90, 119, 0.5), transparent 42%),
+    radial-gradient(circle, rgba(27, 38, 59, 0.55), transparent 48%),
+    radial-gradient(circle, rgba(13, 27, 42, 0.6), transparent 50%),
+    radial-gradient(ellipse at center, transparent 35%, #000000 92%);
+  background-size: 160% 160%, 160% 160%, 160% 160%, 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: auroraDrift 30s ease-in-out infinite;
+  min-height: 100vh;
 }
 .container {
   padding: 2rem 1rem; /* Adjust as needed */

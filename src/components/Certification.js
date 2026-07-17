@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const certifications = [
+  "DP-600: Microsoft Certified Fabric Analytics Engineer Associate",
   "AZ-900: Microsoft Azure Fundamentals",
   "DP-900: Microsoft Azure Data Fundamentals",
   "AI-900: Microsoft Azure AI Fundamentals",
@@ -14,7 +15,7 @@ const CertificationsSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   return (
-    <section id='Certifications' className="max-w-lg mx-auto p-6 bg-white rounded-xl shadow-lg" style={{ color: "#0D1B2A" }}>
+    <section id='Certifications' className="max-w-lg mx-auto p-6 bg-blueGray rounded-xl shadow-lg border border-steelBlue/40">
       <ul className="space-y-4">
         {certifications.map((cert, idx) => (
           <li
@@ -22,11 +23,11 @@ const CertificationsSection = () => {
             onClick={() => setActiveIndex(idx)}
             onMouseEnter={() => setActiveIndex(idx)}
             onMouseLeave={() => setActiveIndex(null)}
-            className={`cursor-pointer rounded-lg p-4 transition-transform transform shadow-md
+            className={`cursor-pointer rounded-lg p-4 transition-transform transform shadow-md text-offWhite
               ${
                 activeIndex === idx
-                  ? "bg-blue-100 scale-105 shadow-blue-400"
-                  : "bg-blue-50 hover:bg-blue-100"
+                  ? "bg-steelBlue scale-105 shadow-steelBlue"
+                  : "bg-darkBlue hover:bg-steelBlue/60"
               }
               `}
           >
