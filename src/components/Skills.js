@@ -27,10 +27,10 @@ const SkillBar = ({ level }) => {
 // Example skills data structure
 const skills = [
   { name: 'Python', level: 90 },
-  { name: 'Deep Learning', level: 80}, 
-  { name: 'Microsoft Fabric', level: 75 },
+  { name: 'Microsoft Fabric', level: 90 },
+  { name: 'SQL', level: 80 },
   { name: 'Machine learning', level: 75 },
-  { name: 'SQL', level: 75 },
+  { name: 'Deep Learning', level: 70}, 
   { name: 'Java', level: 65 },
   { name: 'APIs', level: 65 },
   { name: 'AWS', level: 65 },
